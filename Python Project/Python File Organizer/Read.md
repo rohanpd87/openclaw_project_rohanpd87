@@ -1,6 +1,4 @@
-<h1>
-    <title>Python File Organizer</title>
-</h1>
+<html>
 <body>
 <h1>📂 Python File Organizer</h1>
 <p>This project is a simple Python-based tool that helps organize files in a folder efficiently.</p>
@@ -45,3 +43,4 @@
     <li>Beginner-friendly implementation</li>
 </ul>
 </body>
+</html>
