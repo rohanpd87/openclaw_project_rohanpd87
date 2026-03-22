@@ -1,3 +1,5 @@
+# Python script to organize files
+
 import os
 import shutil
 
