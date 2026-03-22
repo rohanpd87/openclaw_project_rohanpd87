@@ -1,3 +1,6 @@
+# Ignoring System files
 .DS_Store
+# Ignoring environment variables
 .env
+# ignoring idea (pycharm) directory
 .idea/
