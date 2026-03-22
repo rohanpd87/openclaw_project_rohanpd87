@@ -1,8 +1,5 @@
 
 <html>
-<head>
-    <title>OpenClaw Projects</title>
-</head>
 <body>
 
 <h1>OpenClaw Projects</h1>
