@@ -4,3 +4,5 @@
 .env
 # ignoring idea (pycharm) directory
 .idea/
+# ignoring sample file
+Python Project/Python REST api/weather_sample_dict.py
