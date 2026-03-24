@@ -79,10 +79,14 @@ echo "Checking Node.js..."
 if node --version >/dev/null 2>&1; then
     echo "Node installed: $(node --version)"
 else
-    echo "Installing Node using nvm..."
+    echo "Nodejs not found. Installing..."
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh | bash
     \. "$HOME/.nvm/nvm.sh"
-    nvm install 22
+    nvm install 24
+    echo ""
+    echo "Congrats!!! Nodejs successfully installed with version: $(node --version)"
+    echo "node package manager installed with version: $(npm --version)"
+    echo "node version manager version: $(nvm --version)"
 fi
 
 # Check Docker
@@ -91,7 +95,10 @@ echo "Checking Docker..."
 if docker --version >/dev/null 2>&1; then
     echo "Docker installed: $(docker --version)"
 else
-    echo "Docker not found. Please install Docker Desktop manually."
+    echo "docker not found. Installing..."
+    brew install --cask docker
+    echo ""
+    echo "Congrats!!! Docker is successfully installed with version: $(docker --version)"  
 fi
 
 echo ""
@@ -110,13 +117,18 @@ chmod +x installscript1.sh
 <p>
 To confirm whether the requirements are installed!
 </p>
-<img src="/installation docs/Version Check.png" alt="Version Check Screenshot" width="500">
+<img src="/installation docs/Version Check.png" alt="Version Check Screenshot" width = 'fit-content'>
 
-<h2>Projects</h2>
+<h2>Projects (done till now)</h2>
 
 <h3>1. File Organizer</h3>
 <p>
 Organizes files into folders based on type (images, documents, etc).
+</p>
+
+<h3>2. Weather Prediction</h3>
+<p>
+Predicts the weather info. of the city inserted by the user using openweathermap.org api.
 </p>
 
 <h2>Tools Used</h2>
