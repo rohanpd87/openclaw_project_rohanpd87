@@ -1,46 +1,126 @@
-<html>
-<body>
-<h1>Python File Organizer</h1>
-<p>This project is a simple Python-based tool that helps organize files in a folder efficiently.</p>
-<h2>Key Features</h2>
+<h1>Weather API Client (Python CLI)</h1>
+
+<p>
+A simple Python script that fetches real-time weather data using the OpenWeatherMap API 
+and displays it in a clean, formatted table in the terminal.
+</p>
+
+<hr>
+
+<h2>Features</h2>
 <ul>
-    <li>Counts number of files and folders before organizing</li>
-    <li>Skips hidden/system files (like .DS_Store)</li>
-    <li>Organizes files based on their extensions</li>
-    <li>Creates folders automatically if they do not exist</li>
-    <li>Handles files without extension separately</li>
-    <li>Works across macOS, Linux, and Windows</li>
-</ul>
-<h2>How It Works</h2>
-<ol>
-    <li>User provides the folder path</li>
-    <li>Script scans all files in the directory</li>
-    <li>Identifies file types using extensions</li>
-    <li>Creates folders like <b>pdf</b>, <b>png</b>, <b>mp4</b></li>
-    <li>Moves files into respective folders</li>
-</ol>
-
-<h2>Before Organizing</h2>
-<img src="Download Before Organization.png" alt="Before organizing" width="600">
-
-<h2>After Organizing</h2>
-<img src="Download After Organization.png" alt="After organizing" width="600">
-
-<h2>Example Output</h2>
-<p>Files are grouped into folders like:</p>
-<ul>
-    <li>pdf/</li>
-    <li>png/</li>
-    <li>mp4/</li>
-    <li>py/</li>
-    <li>no_extension/</li>
+  <li>Fetch live weather data using REST API</li>
+  <li>Display formatted output in terminal</li>
+  <li>Shows temperature, humidity, wind, pressure, and more</li>
 </ul>
 
-<h2>Benefits</h2>
+<hr>
+
+<h2>🛠 Tech Stack</h2>
 <ul>
-    <li>Saves time by automating file organization</li>
-    <li>Improves folder structure and readability</li>
-    <li>Beginner-friendly implementation</li>
+  <li>Python</li>
+  <li>Requests</li>
+  <li>python-dotenv</li>
 </ul>
-</body>
-</html>
+
+<hr>
+
+<h2>Project Structure</h2>
+
+<pre>
+project-folder/
+│── weather_script.py
+│── .env
+│── .gitignore
+│── README.md
+</pre>
+
+<hr>
+
+<h2>etup Instructions</h2>
+
+<h3>1. Clone the repository</h3>
+<pre>
+git clone &lt;your-repo-link&gt;
+cd &lt;repo-folder&gt;
+</pre>
+
+<h3>2. Install dependencies</h3>
+<pre>
+pip install requests python-dotenv
+</pre>
+
+<h3>3. Create .env file</h3>
+<pre>
+WEATHER_KEY=your_api_key_here
+</pre>
+
+<p><b>Do NOT upload .env to GitHub; Rather add .env file in .gitignore file</b></p>
+
+<hr>
+
+<h2>Run the Script</h2>
+
+<pre>
+python weather_script.py
+</pre>
+
+<p>Enter city name when prompted</p>
+
+<hr>
+
+<h2> Sample Output</h2>
+
+<pre>
+
+==========================================
+************   Weather Info   ************
+==========================================
+City                 | Bhopal
+Temperature (°C)     | 28
+Feel Like (°C)       | 30
+Min.Temperature (°C) | 27
+Max.Temperature (°C) | 30
+Condition            | Clear Sky
+Humidity (%)         | 60%
+Atm. Pressure (hPa)  | 1012
+Wind Speed (m/s)     | 3.5
+Wind Degree          | 120°
+Sunrise Time         | 06:20
+Sunset Time          | 18:35
+==========================================
+</pre>
+
+<hr>
+
+<h2>Notes</h2>
+<ul>
+  <li>Uses metric units (°C)</li>
+  <li>API key is stored securely using environment variables</li>
+  <li>Simple CLI-based application</li>
+</ul>
+
+<hr>
+
+<h2>Future Improvements</h2>
+<ul>
+  <li>Add support for multiple cities</li>
+  <li>Save output to CSV/JSON</li>
+  <li>Add better error handling</li>
+  <li>Convert into a web API (Flask)</li>
+</ul>
+
+<hr>
+
+<h2>Learning Outcome</h2>
+<ul>
+  <li>Working with REST APIs</li>
+  <li>Parsing JSON data</li>
+  <li>Handling environment variables</li>
+  <li>Building CLI-based Python applications</li>
+</ul>
+
+<hr>
+
+<h2>Author</h2>
+<p>Rohan Prasad</p>
