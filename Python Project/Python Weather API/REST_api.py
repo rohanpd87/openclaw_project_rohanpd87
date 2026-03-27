@@ -3,6 +3,7 @@ from dotenv import load_dotenv
 import requests
 from datetime import datetime
 
+# creating load_dotenv for reading key-value pair
 load_dotenv()
 
 # Hiding API key using dotenv
